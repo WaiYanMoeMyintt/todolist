@@ -6,7 +6,7 @@ const TodoListPage = () => {
   useEffect(() => {
     const topicsFunc = async () => {
       try {
-        const api = "http://localhost:3000/api/topics";
+        const api = "/api/topics";
         const getAPI = await fetch(api);
         const resData = await getAPI.json();
         setTopics(resData.topics);
