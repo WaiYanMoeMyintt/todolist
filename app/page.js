@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import TopicList from './components/TopicList'
-const page = () => {
+const TodoListPage = () => {
   const [topics, setTopics] = useState([]);
   useEffect(() => {
     const topicsFunc = async () => {
@@ -28,4 +28,4 @@ const page = () => {
   )
 }
 
-export default page
+export default TodoListPage
